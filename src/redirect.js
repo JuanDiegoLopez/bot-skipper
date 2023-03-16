@@ -9,7 +9,7 @@
     if (url) {
       window.location.href = url;
     } else {
-      history.back();
+      alert('URL not found!');
     }
   } catch (error) {
     console.log(error);
