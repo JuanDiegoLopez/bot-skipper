@@ -4,6 +4,7 @@
   "description": "a simple page to skip bot",
   "scripts": {
     "start": "serve dist",
+    "start:dev": "serve src",
     "build": "babel src -d dist && cp src/{index.html,data.json} dist"
   },
   "author": "",
@@ -12,6 +13,7 @@
     "@babel/cli": "^7.21.0",
     "@babel/core": "^7.21.3",
     "@babel/preset-env": "^7.20.2",
+    "babel-preset-minify": "^0.5.2",
     "serve": "^14.2.0"
   }
 }

@@ -1,8 +1,20 @@
-(function () {
-  const fjs = document.getElementsByTagName('script')[0];
-  const js = document.createElement('script');
-  js.src = `./redirect.js?t=${Date.now()}`;
-  js.type = 'module';
+function validateCaptcha(token) {
+  if (token) {
+    const fjs = document.getElementsByTagName('script')[0];
+    const js = document.createElement('script');
+    js.src = `./redirect.js?t=${Date.now()}`;
+    js.type = 'module';
 
-  fjs.parentNode.insertBefore(js, fjs);
-})();
+    fjs.parentNode.insertBefore(js, fjs);
+  }
+}
+
+function init() {
+  const container = document.getElementById('root');
+  const parameters = {
+    sitekey: '6LcUfwklAAAAAK8W9dC1MjYOvxl14Smzb_zc1bId',
+    callback: 'validateCaptcha',
+  };
+
+  grecaptcha.render(container, parameters);
+}
