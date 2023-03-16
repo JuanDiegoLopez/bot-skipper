@@ -1,0 +1,13 @@
+{
+  "name": "bot-skipper",
+  "version": "1.0.0",
+  "description": "a simple page to skip bot",
+  "scripts": {
+    "start": "serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
