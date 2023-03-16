@@ -1,3 +1,5 @@
+const sitekey = '6LcUfwklAAAAAK8W9dC1MjYOvxl14Smzb_zc1bId';
+
 function validateCaptcha(token) {
   if (token) {
     const fjs = document.getElementsByTagName('script')[0];
@@ -12,7 +14,7 @@ function validateCaptcha(token) {
 function init() {
   const container = document.getElementById('root');
   const parameters = {
-    sitekey: '6LcUfwklAAAAAK8W9dC1MjYOvxl14Smzb_zc1bId',
+    sitekey,
     callback: 'validateCaptcha',
   };
 
